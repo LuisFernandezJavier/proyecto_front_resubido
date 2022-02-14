@@ -7,7 +7,7 @@ import { Accesorio } from '../models/accesorio/accesorio';
     providedIn: 'root'
 })
 export class AccesorioService {
-    url = 'http://localhost:3000/';
+    url = 'https://api-airsoft.herokuapp.com/';
     constructor(private http: HttpClient) { }
     listarAccesorio(): Observable<any> {
         return this.http.get(this.url + 'listaAccesorios');
